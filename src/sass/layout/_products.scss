@@ -1,0 +1,118 @@
+.products{
+    &__list{
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 24px;
+
+        &--red {
+            background: #FFB8CA;
+        }
+        &--yellow{
+            background: #F0D1A5;
+        }
+        &--green {
+            background: #C2E297;
+        }
+    }
+    &__item::before {
+        content: "";
+
+    }    
+    &__text {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.04em;
+
+        color: #FFFFFF;
+    }
+
+}
+
+// /mobile
+@media screen and (max-width:767px) {
+    .products{
+            // display: flex;
+            // flex-direction: column;
+               
+        &__item {
+            width: 280px;
+            padding-left: 41px;
+            padding-right: 39px;
+        }
+        &__item::before {
+            width: 249px;            
+        } 
+        &__item:not(:last-child) {
+            margin-bottom: 17px;
+        }
+            
+        &__text {
+            font-size: 14px;
+            line-height: 1.5;
+    }
+}
+}
+
+// tablet
+// @media screen and (max-width:1279px) {
+//     .products {
+//         &__list {
+//             margin-top: -39px;
+//             margin-left: -20px;
+//         }
+    
+//         &__item {
+//             width: 220px;
+//             margin-top: 39px;
+//             padding-left: 11;
+//             padding-right: 11px;
+//             flex-basis: calc(100% / 3 - 11px);
+            
+//         }
+//         &__item:not(:first-child){
+//             margin-left: 20px;
+//         }
+//         &__item::before {
+//             width: 220px;            
+//         } 
+//         &__text {
+//             font-size: 14px;
+//             line-height: 1.8;
+//         }
+//     }
+// }
+
+// // desktop
+// @media screen and (min-width:1280px){
+//     .products {
+//         &__list {
+//             margin-top: -49px;
+//             margin-left: -23px;
+//         }
+//         &__item:not(:first-child){
+//             margin-left: 23px;
+//         }
+//         &__item {
+//             width: 337px;
+//             margin-top: 49px;
+//             padding-right: 44;
+//             padding-left: 44px;
+//             flex-basis: calc(100% / 3 - 23px);
+            
+//         }
+//         &__item::before {
+//             width: 335px;            
+//         } 
+//         &__text {
+//             font-size: 16px;
+//             line-height: 1.75;
+//         }
+//     }
+// }
