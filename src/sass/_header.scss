@@ -36,7 +36,7 @@ h6 {
   color: #212121;
   z-index: 1;
 }
-.header {
+.header-hero {
   width: 100%;
   background-color: #ffb8ca;
 }
@@ -147,16 +147,22 @@ h6 {
 }
 
 // Геро
+
 .hero {
-  width: 100%;
-  background-color: #ffb8ca;
-}
-.hero__body {
   position: relative;
   padding-top: 84px;
+  padding-bottom: 143px;
+  @media (max-width: 767px) {
+    overflow: hidden;
+  }
+}
+
+.hero__inner {
+  display: inline-flex;
+  margin-bottom: 20px;
+  width: 277px;
 }
 .hero__title {
-  width: 277px;
   font-style: normal;
   font-weight: normal;
   font-size: 38px;
@@ -165,6 +171,7 @@ h6 {
   text-transform: uppercase;
 
   color: #ffffff;
+  z-index: 1;
 }
 .title-additions {
   font-size: 58px;
@@ -204,6 +211,7 @@ h6 {
 }
 .hero__wrap {
   display: flex;
+  margin-bottom: 19px;
 }
 .hero__btn {
   padding: 7px 15px;
@@ -217,4 +225,21 @@ h6 {
   text-align: center;
 
   color: #ffffff;
+}
+
+.hero__thumb {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.hero__box-img {
+  position: absolute;
+  top: 23px;
+  left: 88px;
+  @media (min-width: 768px) {
+    top: 0px;
+    left: 0px;
+  }
 }
