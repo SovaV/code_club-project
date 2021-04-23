@@ -30,7 +30,10 @@
         </svg>
       </button>
 
-      <button class="header__btn button" type="button">Buy now ></button>
+      <button class="header__btn button" type="button">
+        Buy now
+        <span class="arrow"></span>
+      </button>
     </div>
     <div class="mobile is-open" data-menu>
       <button type="button" class="burger-close" data-menu-close>
@@ -40,7 +43,7 @@
       </button>
       <button class="mobile__btn button" type="button">
         Buy now
-        <span class="arrow">></span>
+        <span class="arrow"></span>
       </button>
       <ul class="mobile__list list">
         <li class="mobile__item item">
@@ -66,24 +69,101 @@
         <h1 class="hero__title">
           ice cream made with <span class="title-additions">passion</span>
         </h1>
-      </div>
 
+        <div class="hero__inner-wrap">
+          <div class="hero__inner-box">
+            <span class="hero__inner-circle"></span>
+            <b class="hero__inner-bold">16</b>
+            <p class="hero__inner-text">cafes</p>
+          </div>
+
+          <div class="hero__inner-box">
+            <span class="hero__inner-circle"></span>
+            <b class="hero__inner-bold">23</b>
+            <p class="hero__inner-text">food trucks</p>
+          </div>
+        </div>
+      </div>
+      <!-- hero wrap  -->
       <div class="hero__wrap">
         <button type="button" class="hero__btn button">Products</button>
         <button type="button" class="hero__btn button">How it’s made?</button>
       </div>
       <div class="hero__box">
-        <span class="hero__box-circle"></span>
-        <img class="hero__box-img" src="./images/header/mob/ice.png" alt="" />
+        <span class="hero__box-circle">
+          <picture>
+            <source
+              srcset="./images/header/desk/ice.png 1x, ./images/header/desk/ice@2x.png 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./images/header/tablet/ice.png 1x, ./images/header/tablet/ice@2x.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/header/mob/ice.png 1x, ./images/header/mob/ice@2x.png 2x"
+              media="(min-width: 320px)"
+            />
+
+            <img class="hero__box-img" src="./images/header/mob/ice.png" alt="ice" />
+          </picture>
+        </span>
       </div>
       <div class="hero__thumb">
-        <img src="" alt="" />
-        <div>
-          <p>
+        <picture>
+          <source
+            srcset="./images/header/desk/milk.png 1x, ./images/header/desk/milk@2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="./images/header/tablet/milk.png 1x, ./images/header/tablet/milk@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/header/tablet/milk.png 1x, ./images/header/tablet/milk@2x.png 2x"
+            media="(min-width: 320px)"
+          />
+          <img class="hero__thumb-img" src="./images/header/tablet/milk.png" alt="milk" />
+        </picture>
+        <div class="hero__thumb-box">
+          <p class="hero__thumb-text text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
           </p>
+          <picture>
+            <source
+              srcset="./images/header/desk/arrow.png 1x, ./images/header/desk/arrow@2x.png 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="./images/header/tablet/arrow.png 1x, ./images/header/tablet/arrow@2x.png 2x"
+              media="(min-width: 768px)"
+            />
+
+            <img
+              class="hero__thumb-img--arrow"
+              src="./images/header/tablet/arrow.png"
+              alt="arrow"
+            />
+          </picture>
         </div>
+      </div>
+      <div class="hero__thumbnail">
+        <picture>
+          <source
+            srcset="./images/header/desk/so_tasty.png 1x, ./images/header/desk/so_tasty@2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/header/tablet/so_tasty.png    1x,
+              ./images/header/tablet/so_tasty@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <img class="hero__thumbnail-img" src="./images/header/tablet/so_tasty.png" alt="tasty" />
+        </picture>
       </div>
     </section>
   </div>
