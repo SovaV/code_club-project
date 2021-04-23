@@ -32,3 +32,8 @@ body {
     height: auto;
     object-fit: contain; /* заполняет собой контейнер с сохранением пропорций */
   }
+  button {
+    padding: 0;
+    margin: 0;
+    display: block;
+  }

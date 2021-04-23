@@ -1,6 +1,5 @@
 // united
 .products__title {
-    margin-bottom: 31px;
     font-family: var(--title-font);
     font-weight: normal;
     text-align: center;
@@ -12,7 +11,7 @@
 //desktop 
 @media screen and (min-width:1280px) {
     .products__title {
-        margin-bottom: 39px;
+        margin-bottom: 259px;
         font-size: 58px;
         line-height: 0.88;
         letter-spacing: 0.06em;
@@ -22,7 +21,7 @@
 // tablet
 @media screen and (min-width:768px) and (max-width:1279px) {
     .products__title{
-        margin-bottom: 49px;
+        margin-bottom: 150px;
         font-size: 48px;
         line-height: 1.15;
     
@@ -33,6 +32,7 @@
 // mobile
 @media screen and (max-width:767px) {
     .products__title {
+        margin-bottom: 144px;
         font-size: 34px;
         line-height: 1.15;
         letter-spacing: 0.04em;
