@@ -18,14 +18,14 @@
 }
 .footer-title-p {
   margin-bottom: 17px;
-  font-family: Titan One;
+  font-family: var(--title-font);
   font-size: 18px;
   line-height: 1.16;
   text-transform: uppercase;
   color: var(--sup-font-color);
 }
 .footer-title {
-  font-family: Titan One;
+  font-family: var(--title-font);
   font-size: 34px;
   line-height: 1.14;
   letter-spacing: 0.04em;
