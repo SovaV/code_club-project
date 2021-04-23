@@ -32,6 +32,15 @@
         text-transform: uppercase;
         color: #fff;
     }
+    &__subtitle::after {
+        content: "";
+        width: 26px;
+        height: 6px;       
+        color:#000;
+        // background-color: 1px solid #702cdd;
+        // background-image: url(../../images/products/drops.svg);
+        margin-bottom: 30px;
+    }
    
 }
 
@@ -44,9 +53,11 @@
                
         &__item {
             width: 280px;
-            padding-top: 161px;
-            padding-left: 41px;
-            padding-right: 39px;
+            padding: 161px 39px 41px 41px;
+        //     padding-top: 161px;
+        //     padding-right: 39px;
+        //     padding-left: 41px;            
+        //     padding-bottom: 41px;
         }
         
         &__item:not(:last-child) {
@@ -70,7 +81,10 @@
         &__item {
             padding-bottom: 40px;
         }
-       }
+        &__subtitle {
+            margin-bottom: 66px;
+        }
+    }
 }
 
 // tablet
@@ -85,9 +99,11 @@
         &__item {
             width: 220px;
             margin-top: 46px;
-            padding-top: 152px;
-            padding-right: 11px;
-            padding-left: 11px;
+            padding: 152px 11px 40px 11px;
+            // padding-top: 152px;
+            // padding-right: 11px;
+            // padding-left: 11px;
+            // padding-bottom: 40px;
         }        
         &__item::before {
             width: 220px;            
@@ -143,10 +159,10 @@
             font-size: 16px;
             line-height: 1.75;
         }
-            &__subtitle {
-                margin-bottom: 32px;
-                font-size: 30px;
-                line-height: 1.13;
-            }
-    }
+        &__subtitle {
+            margin-bottom: 70px;
+            font-size: 30px;
+            line-height: 1.13;
+        }
+}
 }
