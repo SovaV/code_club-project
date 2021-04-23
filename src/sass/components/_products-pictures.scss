@@ -1,112 +1,87 @@
-// .products__item::before {
-//     content: "";
-//     display: inline-block;
-// }  
-.products__item {
+.products{
+    &__item {
     position: relative;
+    }
+    &__item--red::before,
+    &__item--yellow::before,
+    &__item--green::before {
+        background-size: contain;
+        content: "";
+        position: absolute;
+        transform: translateY(-110%);
+    }
 }
 
 // mobile
 @media screen and (max-width: 768px) {
     .products{
-        &__item--red::before {
-        content: "";
-        position: absolute;
-        transform: translateY(-110%);
-        width: 249px; 
-        height: 252px;
+        &__item--red::before,
+        &__item--yellow::before,
+        &__item--green::before {  
+            width: 249px; 
+            height: 252px;
+        }
+       &__item--red::before {
         // margin-bottom: 22px;
-        background-color:green;
-        // background-image: url("../../images/products/a-mobile/ice-cream-pink.jpg");
+        background-image: url(../images/products/a-mobile/ice-cream-pink.png);
        }
         &__item--yellow::before {
-            content: "";
-            position: absolute;
-            transform: translateY(-110%);
-            width: 249px; 
-            height: 252px;
             // margin-bottom: 22px;
-            background-color:green;
-            // background-image: url("../../images/products/a-mobile/ice-cream-yellow.jpg");
+            background-image: url(../images/products/a-mobile/ice-cream-yellow.png);
         }  
         &__item--green::before {
-            content: "";
-            position: absolute;
-            transform: translateY(-110%);
-            width: 249px; 
-            height: 252px;
             // margin-bottom: 22px;
-            background-color:green;
-            // background-image: url("../../images/products/a-mobile/ice-cream-brown.jpg");
+            background-image: url(../images/products/a-mobile/ice-cream-brown.png);
         }   
 } 
 }    
 
 // tablet
 @media screen and (min-width:768px) and (max-width: 1279px) {
-    .products__item--red::before {
-        content: "";
-        position: absolute;
-        transform: translateY(-110%);
-        width: 220px; 
-        height: 224px;
+    .products{
+        &__item--red::before,
+        &__item--yellow::before,
+        &__item--green::before {
+            width: 220px; 
+            height: 224px;
+        }
+        &__item--red::before {
         // margin-bottom: 22px;
-        background-color:green;
-        // background-image: url("../../images/products/a-mobile/ice-cream-pink.jpg");
-    } 
-    .products__item--yellow::before {
-        content: "";
-        position: absolute;
-        transform: translateY(-110%);
-        width: 220px; 
-        height: 224px;
+        background-image: url(../images/products/a-mobile/ice-cream-pink.png);
+        } 
+        &__item--yellow::before {
         // margin-bottom: 22px;
-        background-color:green;
-        // background-image: url("../../images/products/a-mobile/ice-cream-yellow.jpg");
-    } 
-    .products__item--green::before {
-        content: "";
-        position: absolute;
-        transform: translateY(-110%);
-        width: 220px; 
-        height: 224px;
+        background-image: url(../images/products/a-mobile/ice-cream-yellow.png);
+        } 
+        &__item--green::before {
         // margin-bottom: 22px;
-        background-color:green;
-        // background-image: url("../../images/products/a-mobile/ice-cream-brown.jpg");
-    } 
+        background-image: url(../images/products/a-mobile/ice-cream-brown.png);
+        } 
+    }
 } 
 
 @media screen and (min-width: 1280px) {
-    .products__item--red::before {
-        content: "";
-        position: absolute;
-        transform: translateY(-110%);
-        width: 335px; 
-        height: 335px;
+    .products{
+        &__item--red::before,
+        &__item--yellow::before,
+        &__item--green::before {
+            width: 335px; 
+            height: 335px;
+        }
+        &__item--red::before {
         // margin-bottom: 22px;
-        background-color:green;
-        // background-image: url("../../images/products/a-mobile/ice-cream-red.jpg");
-    } 
-    .products__item--yellow::before {
-        content: "";
-        position: absolute;
-        transform: translateY(-110%);
-        width: 335px; 
-        height: 335px;
+        background-image: url(../images/products/a-mobile/ice-cream-pink.png);
+        } 
+        &__item--yellow::before {
         // margin-bottom: 22px;
-        background-color:green;
-        // background-image: url("../../images/products/a-mobile/ice-cream-yellow.jpg");
-    } 
-    .products__item--green::before {
-        content: "";
-        position: absolute;
-        transform: translateY(-110%);
-        width: 335px; 
-        height: 335px;
+        background-image: url(../images/products/a-mobile/ice-cream-yellow.png);
+        } 
+        &__item--green::before {
         // margin-bottom: 22px;
-        background-color:green;
-        // background-image: url("../../images/products/a-mobile/ice-cream-brown.jpg");
-    } } 
+        background-image: url(../images/products/a-mobile/ice-cream-brown.png);
+        } 
+    }
+} 
 
 
 
