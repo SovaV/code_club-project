@@ -33,9 +33,38 @@
     content: '';
     height: 50px;
     width: 50px;
-
-    background-image: url('../images/advantages/adv2@2x.png');
+    background-image: url('../images/advantages/adv2.png');
     background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/advantages/adv2@2x.png');
+    }
+  }
+
+  &:first-child::before {
+    background-image: url('../images/advantages/adv1.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/advantages/adv1@2x.png');
+    }
+  }
+
+  &:last-child::before {
+    background-image: url('../images/advantages/adv3.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/advantages/adv3@2x.png');
+    }
   }
 }
 
