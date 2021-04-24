@@ -28,9 +28,23 @@
     height: 40px;
 }
 
-.recipe-menu__close-btn {
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
+.recipe-menu {
+    &__close-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border-color: var(--mobmenu-bg-color);
+        background-color: transparent;
+    }
 
+    &__close-icon {
+        padding: 0;
+       fill: var(--secondary-color);
+       color: var(--secondary-color);
+       width: 15px;
+       height: 15px;
+    }
 }

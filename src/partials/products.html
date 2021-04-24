@@ -1,7 +1,7 @@
-<section class="products">
+<section class="products" id="products">
     <div class="container">
-        <p class="products__label">100% natural</p>
-        <h2 class="products__title">products</h2>
+        <p class="section__label section__label--products">100% natural</p>
+        <h2 class="section__title section__title--products">products</h2>
         <ul class="products__list">
             <li class="products__item products__item--red">
                 <h3 class="products__subtitle">ice cream</h3>
@@ -67,7 +67,9 @@
                 </button>
                 <div class="recipe-menu" data-modal>
                     <button type="button" class="recipe-menu__close-btn vissually-hidden" data-modal-close>
-                        <img class="recipe-menu__close-icon" src="./images/products/d-arrows+close/close-icon.png" alt="хрестик">
+                        <svg class="recipe-menu__icon">
+                            <use href="./images/products/close-symbol.svg#close-symbol"></use>
+                        </svg>
                     </button>
                 </div>
             </li>
@@ -76,13 +78,3 @@
     
 </section>
 
-
-<!-- <picture> -->
-    <!-- <source srcset="./images/products/e-drops/drops.png 1x,
-    ./images/products/e-drops/drops@2x.png 2x,
-    ./images/products/e-drops/drops@2x.webp 3x"
-     type="image/png">
-    
-    <img src="./images/products/e-drops/drops.png" alt="кружёчки" 
-    class="drops">
-  </picture> -->
