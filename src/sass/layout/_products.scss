@@ -1,4 +1,6 @@
 .products{
+    background: var(--bg-of-section);
+
     &__item {
         display: flex;
         align-items: center;
@@ -6,13 +8,13 @@
         border-radius: 24px;
 
         &--red {
-            background: #FFB8CA;
+            background: var(--main-bg-color);
         }
         &--yellow{
-            background: #F0D1A5;
+            background: var(--sec-card-bg-color);
         }
         &--green {
-            background: #C2E297;
+            background: var(--third-card-bg-color);
         }
     }
      
@@ -25,6 +27,7 @@
         color: #FFFFFF;
     }
     &__subtitle {  
+        position: relative;
         margin-bottom: 30px;      
         font-family: var(--title-font);
         text-align: center;
@@ -33,13 +36,14 @@
         color: #fff;
     }
     &__subtitle::after {
+        position: absolute;
         content: "";
+        background-image: url(../images/products/e-drops/drops.png);
         width: 26px;
-        height: 6px;       
-        color:#000;
-        // background-color: 1px solid #702cdd;
-        // background-image: url(../../images/products/drops.svg);
-        margin-bottom: 30px;
+        height: 6px;  
+        top: 215%;
+        left: 40%;     
+        color: #FFFFFF;
     }
    
 }
@@ -54,10 +58,6 @@
         &__item {
             width: 280px;
             padding: 161px 39px 41px 41px;
-        //     padding-top: 161px;
-        //     padding-right: 39px;
-        //     padding-left: 41px;            
-        //     padding-bottom: 41px;
         }
         
         &__item:not(:last-child) {
@@ -68,6 +68,9 @@
             margin-bottom: 30px;
             font-size: 14px;
             line-height: 1.5;
+        }
+        &__subtitle::after{
+            width: 26px;
         }
 }
 }
@@ -100,10 +103,6 @@
             width: 220px;
             margin-top: 46px;
             padding: 152px 11px 40px 11px;
-            // padding-top: 152px;
-            // padding-right: 11px;
-            // padding-left: 11px;
-            // padding-bottom: 40px;
         }        
         &__item::before {
             width: 220px;            
@@ -144,12 +143,7 @@
         &__item {
             width: 337px;
             margin-top: 48px;
-            padding: 163px 50px 45px 44px;
-            // padding-top: 163px;
-            // padding-bottom: 50px;
-            // padding-right: 45px;
-            // padding-left: 44px;
-                       
+            padding: 163px 50px 45px 44px;                       
         }
         &__item::before {
             width: 335px;            
