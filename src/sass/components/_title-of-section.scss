@@ -16,6 +16,7 @@
     font-size: 36px;
     line-height: 1.14;
     text-align: start;
+    // margin-top: 16px;
   }
 }
 
@@ -26,6 +27,10 @@
 
     &--products {
       margin-bottom: 150px;
+    }
+
+    &--advantages {
+      text-transform: none;
     }
   }
 }
