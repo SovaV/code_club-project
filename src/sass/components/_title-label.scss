@@ -1,5 +1,4 @@
-.products__label {
-    margin-bottom: 15px;
+.section__label {
     font-family: var(--title-font);
     font-weight: var(--font-weight-normal);
     font-size: 18px;
@@ -8,6 +7,10 @@
     text-transform: uppercase;
 
     color: var(--sup-font-color);
+
+    &--products{
+        margin-bottom: 15px; 
+    }
 }
 
 // tablet
