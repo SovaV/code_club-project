@@ -6,7 +6,7 @@
     height: 40px;
     border-radius: 50%;
     border-color: transparent;
-    transition: var(--main-animation);
+    transition: border-color var(--main-animation);
 
     &--red:hover,
     &--red:focus{
@@ -14,11 +14,11 @@
     }
     &--yellow:hover,
     &--yellow:focus{
-        border-color: rgb(211, 144, 50);
+        border-color: var(--tech-yellow-color);
     }
     &--green:hover,
     &--green:focus{
-        border-color: rgb(140, 207, 52);
+        border-color: var(--tech-green-color);
         
     }
 }
@@ -27,15 +27,12 @@
     width: 40px;
     height: 40px;
 }
-// .recipe-menu__close-btn{
-//     width: 40px;
-//     height: 40px;
-//     background-color: #fff;
-//     color: var(--btn-hover-color)
-// }
-// .arrow-btn__icon {
-//     width: 40px;
-//     height: 40px;
-//     background-color: #fff;
-//     color: var(--btn-hover-color);
-// }
+
+.recipe-menu__close-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+}
+.recipe-menu__close-icon {
+    background-color: transparent;
+}

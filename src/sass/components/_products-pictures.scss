@@ -9,6 +9,7 @@
         content: "";
         position: absolute;
         transform: translateY(-110%);
+        margin-bottom: 22px;
     }
 }
 
@@ -22,7 +23,6 @@
             height: 252px;
         }
         &__item--red::before {
-        // margin-bottom: 22px;
         background-image: url(../images/products/a-mobile/ice-cream-pink.png);
         
             @media (min-device-pixel-ratio: 2),
@@ -42,7 +42,6 @@
        }
         //   yellow
         &__item--yellow::before {
-            // margin-bottom: 22px;
             background-image: url(../images/products/a-mobile/ice-cream-yellow.png);
 
             @media (min-device-pixel-ratio: 2),
@@ -62,7 +61,6 @@
         }  
         // green
         &__item--green::before {
-            // margin-bottom: 22px;
             background-image: url(../images/products/a-mobile/ice-cream-brown.png);
         
             @media (min-device-pixel-ratio: 2),
@@ -93,7 +91,6 @@
             height: 224px;
         }
         &__item--red::before {
-        // margin-bottom: 22px;
         background-image: url(../images/products/b-tablet/ice-cream-pink.png);
             
             @media (min-device-pixel-ratio: 2),
@@ -112,7 +109,6 @@
             }
         } 
         &__item--yellow::before {
-        // margin-bottom: 22px;
         background-image: url(../images/products/b-tablet/ice-cream-yellow.png);
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
@@ -131,7 +127,6 @@
         } 
         // green
         &__item--green::before {
-        // margin-bottom: 22px;
         background-image: url(../images/products/b-tablet/ice-cream-brown.png);
 
             @media (min-device-pixel-ratio: 2),
@@ -161,7 +156,6 @@
             height: 335px;
         }
         &__item--red::before {
-        // margin-bottom: 22px;
         background-image: url(../images/products/c-desktop/ice-cream-pink.png);
 
             @media (min-device-pixel-ratio: 2),
@@ -180,7 +174,6 @@
             }
         } 
         &__item--yellow::before {
-        // margin-bottom: 22px;
         background-image: url(../images/products/c-desktop/ice-cream-yellow.png);
 
             @media (min-device-pixel-ratio: 2),
@@ -199,7 +192,6 @@
             }
         } 
         &__item--green::before {
-        // margin-bottom: 22px;
         background-image: url(../images/products/c-desktop/ice-cream-brown.png);
 
             @media (min-device-pixel-ratio: 2),
