@@ -6,8 +6,9 @@
     height: 40px;
     border-radius: 50%;
     border-color: transparent;
+    cursor: pointer;
     transition: border-color var(--main-animation);
-
+    
     &--red:hover,
     &--red:focus{
         border-color: var(--mobmenu-bg-color);
@@ -27,24 +28,89 @@
     width: 40px;
     height: 40px;
 }
-
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 .recipe-menu {
+    position: absolute;
+    top: 55%;
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 20px;
+    background-image: url(../images/products/pink-cloud.png);
+   
+    transition: opacity var(--main-animation);
+    
     &__close-btn {
+        position: absolute;
+        top: 4px;
+        right: 4px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 18px;
-        height: 18px;
+        width: 13px;
+        height: 13px;
         border-radius: 50%;
         border-color: var(--mobmenu-bg-color);
-        background-color: transparent;
+        cursor: pointer;
+        color: var(--sup-font-color);
+        transition: color var(--main-animation);
     }
-
     &__close-icon {
         padding: 0;
-       fill: var(--secondary-color);
-       color: var(--secondary-color);
-       width: 15px;
-       height: 15px;
+        fill: var(--secondary-color);
+        color: var(--secondary-color);
+        width: 15px;
+        height: 15px;
+    }
+  
+    &__title {
+        margin-top: 13px;
+        font-family: var(--title-font);
+        font-weight: var(--font-weight-normal);
+        font-size: 12px;
+        line-height: 1.17;
+        text-align: center;
+        text-transform: uppercase;
+        // color: var(--btn-hover-color);
+
+        line-height: 1.15;
+
+        &--red {
+            color: rgb(112, 20, 74);
+        }
+        &--yellow {
+            color:rgb(112, 20, 74);
+        }
+        &--green {
+            color: rgb(112, 20, 74);
+        }
+    }
+    
+    &__list{
+        color:var(--tech-yellow-color);
+    }
+    &__list,
+    &__price,
+    &__mass {
+        margin-top: 5px;
+        font-family: var(--main-font);
+        font-weight: var(--font-weight-bold);
+        text-align: center;
+        letter-spacing: 0.04em;
+        font-size: 11px;
+        line-height: 1.5;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 4px;
+    }
+    &__mass,
+    &__price {
+        color: var(--desc-font-color);
     }
 }
+
+
