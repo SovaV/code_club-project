@@ -3,7 +3,6 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
 @import './utils/variables';
 @import './utils/visually-hidden';
 
@@ -12,10 +11,11 @@
 
 @import './components/title-label';
 @import './components/title-of-section';
+@import './components/products-pictures';
+@import './components/recipe-menu';
 
+@import './layout/products';
 @import './layout/about';
 @import './layout/advantages';
-@import './layout/footer';
 @import './layout/gallery';
-
-@import './example';
+@import './layout/footer';

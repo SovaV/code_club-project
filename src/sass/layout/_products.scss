@@ -1,0 +1,175 @@
+.products{
+    background: var(--bg-of-section);
+    // background: #fff;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 24px;
+
+        &--red {
+            background: var(--main-bg-color);
+            &:hover,
+            &:focus {
+                box-shadow: 0px 1px 3px var(--mobmenu-bg-color), 0px 1px 1px var(--mobmenu-bg-color), 0px 2px 1px var(--mobmenu-bg-color);
+            }
+        }
+        &--yellow{
+            background: var(--sec-card-bg-color);
+            &:hover,
+            &:focus {
+                box-shadow: 0px 1px 3px var(--tech-yellow-color), 0px 1px 1px var(--tech-yellow-color), 0px 2px 1px var(--tech-yellow-color);
+            }
+        }
+        &--green {
+            background: var(--third-card-bg-color);
+            &:hover,
+            &:focus {
+                box-shadow: 0px 1px 3px var(--tech-green-color), 0px 1px 1px var(--tech-green-color), 0px 2px 1px var(--tech-green-color);                
+            }
+        }
+    }
+     
+    &__text {
+        font-family: var(--main-font);
+        font-weight: var(--font-weight-bold);
+        text-align: center;
+        letter-spacing: 0.04em;
+
+        color: #FFFFFF;
+    }
+    &__subtitle {  
+        position: relative;
+        margin-bottom: 30px;      
+        font-family: var(--title-font);
+        font-weight: var(--font-weight-normal);
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    &__subtitle::after {
+        position: absolute;
+        content: "";
+        background-image: url(../images/products/e-drops/drops.png);
+        width: 26px;
+        height: 6px;  
+        top: 215%;
+        left: 40%;     
+        color: #FFFFFF;
+    }
+   
+}
+
+
+// /mobile
+@media screen and (max-width:767px) {
+    .products{
+        padding-top: 121px;
+        padding-bottom: 98px;
+               
+        &__item {
+            width: 280px;
+            padding: 161px 39px 41px 41px;
+        }
+        
+        &__item:not(:last-child) {
+            margin-bottom: 130px;
+        }
+            
+        &__text {
+            margin-bottom: 30px;
+            font-size: 14px;
+            line-height: 1.5;
+            max-width: 200px;
+        }
+        &__subtitle::after{
+            width: 26px;
+        }
+}
+}
+// mobile + tablet
+@media screen and (max-width:1279px) {
+    .products{
+        &__subtitle {
+            font-size: 20px;
+            line-height: 1.15;
+        }
+        &__item {
+            padding-bottom: 40px;
+        }
+        &__subtitle {
+            margin-bottom: 66px;
+        }
+    }
+}
+
+// tablet
+@media screen and (min-width:768px) and (max-width:1279px) {
+    .products {
+        padding-top: 122px;
+        padding-bottom: 112px;
+
+        &__list {
+            margin-top: -46px;
+        }    
+        &__item {
+            width: 220px;
+            margin-top: 46px;
+            padding: 152px 11px 40px 11px;
+        }        
+        &__item::before {
+            width: 220px;            
+        } 
+        &__text {
+            margin-bottom: 40px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    }
+}
+// tablet +desktop
+@media screen and (min-width:768px){
+    .products{
+        &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -20px;
+    }
+    &__item {
+        margin-left: 20px;
+        flex-basis: calc(100% / 3 - 20px);
+    }
+}
+}
+// // desktop
+@media screen and (min-width:1280px){
+    .products {
+        padding-top: 127px;
+        padding-bottom: 119px;
+
+        &__list {
+            margin-top: -49px;
+        }
+        &__item {
+            width: 337px;
+            margin-top: 48px;
+            padding: 163px 50px 45px 44px;                       
+        }
+        &__item::before {
+            width: 335px;            
+        } 
+        &__text {
+            margin-bottom: 62px;
+            font-size: 16px;
+            line-height: 1.75;
+        }
+        &__subtitle {
+            margin-bottom: 70px;
+            font-size: 30px;
+            line-height: 1.13;
+        }
+}
+}
