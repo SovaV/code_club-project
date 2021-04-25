@@ -1,0 +1,68 @@
+.section__title {
+  font-family: var(--title-font);
+  font-weight: var(--font-weight-normal);
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+
+  &--products {
+    margin-bottom: 144px;
+  }
+
+  &--about {
+    margin-bottom: 26px;
+  }
+
+  &--advantages {
+    font-size: 36px;
+    line-height: 1.14;
+    text-align: start;
+    // margin-top: 16px;
+  }
+
+  &--footer {
+    text-align: start;
+  }
+}
+
+// tablet
+@media screen and (min-width: 768px) {
+  .section__title {
+    font-size: 48px;
+
+    &--products {
+      margin-bottom: 150px;
+    }
+
+    &--about {
+      margin-bottom: 50px;
+
+    &--advantages {
+      text-transform: none;
+    }
+    
+    &--footer {
+      letter-spacing: 0.06em;
+    }
+  }
+}
+
+//desktop
+@media screen and (min-width: 1280px) {
+  .section__title {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+
+    &--products {
+      margin-bottom: 259px;
+    }
+
+    &--about {
+      margin-bottom: 55px;
+    }
+  }
+}
