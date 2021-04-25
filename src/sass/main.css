@@ -362,14 +362,17 @@ img {
   background-color: #ffffff;
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(65%, #ffffff), color-stop(35%, #fff5f6));
   background-image: linear-gradient(0deg, #ffffff 65%, #fff5f6 35%);
-  /*<height: 430px;
-  /width: 1280px;
+  /*<width: 1280px;
   left: 0px;
   top: 3021px;
   border-radius: 0px;*/
 }
 
-.gallery__container {
+.gallery .container {
+  padding-bottom: 123px;
+}
+
+* .gallery__container {
   padding: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
