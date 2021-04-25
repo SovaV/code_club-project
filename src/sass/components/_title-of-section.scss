@@ -19,6 +19,12 @@
   &--advantages {
     font-size: 36px;
     line-height: 1.14;
+    text-align: start;
+    // margin-top: 16px;
+  }
+
+  &--footer {
+    text-align: start;
   }
 }
 
@@ -33,6 +39,13 @@
 
     &--about {
       margin-bottom: 50px;
+
+    &--advantages {
+      text-transform: none;
+    }
+    
+    &--footer {
+      letter-spacing: 0.06em;
     }
   }
 }

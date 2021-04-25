@@ -8,6 +8,11 @@
   text-transform: uppercase;
   margin-bottom: 15px;
   color: var(--sup-font-color);
+
+  &--footer {
+    margin-bottom: 17px;
+    text-align: start;
+  }
 }
 
 // tablet
