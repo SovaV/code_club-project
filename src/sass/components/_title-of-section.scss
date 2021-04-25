@@ -12,6 +12,10 @@
     margin-bottom: 144px;
   }
 
+  &--about {
+    margin-bottom: 26px;
+  }
+
   &--advantages {
     font-size: 36px;
     line-height: 1.14;
@@ -33,6 +37,9 @@
       margin-bottom: 150px;
     }
 
+    &--about {
+      margin-bottom: 50px;
+
     &--advantages {
       text-transform: none;
     }
@@ -52,6 +59,10 @@
 
     &--products {
       margin-bottom: 259px;
+    }
+
+    &--about {
+      margin-bottom: 55px;
     }
   }
 }
