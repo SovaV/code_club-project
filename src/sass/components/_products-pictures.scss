@@ -1,0 +1,215 @@
+.products{
+    &__item {
+    position: relative;
+    }
+    &__item--red::before,
+    &__item--yellow::before,
+    &__item--green::before {
+        background-size: contain;
+        content: "";
+        position: absolute;
+        transform: translateY(-110%);
+        margin-bottom: 22px;
+    }
+}
+
+// mobile
+@media screen and (max-width: 768px) {
+    .products{
+        &__item--red::before,
+        &__item--yellow::before,
+        &__item--green::before {  
+            width: 249px; 
+            height: 252px;
+        }
+        &__item--red::before {
+        background-image: url(../images/products/a-mobile/ice-cream-pink.png);
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/a-mobile/ice-cream-pink@2x.png);
+            }
+            }
+            @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+            & {
+                background-image: url(../images/products/a-mobile/ice-cream-pink@2x.webp);
+            }
+            }    
+       }
+        //   yellow
+        &__item--yellow::before {
+            background-image: url(../images/products/a-mobile/ice-cream-yellow.png);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/a-mobile/ice-cream-yellow@2x.png);
+            }
+            }
+            @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+            & {
+                background-image: url(../images/products/a-mobile/ice-cream-yellow@2x.webp);
+            }
+            }
+        }  
+        // green
+        &__item--green::before {
+            background-image: url(../images/products/a-mobile/ice-cream-brown.png);
+        
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/a-mobile/ice-cream-brown@2x.png);
+            }
+            }
+            @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+            & {
+                background-image: url(../images/products/a-mobile/ice-cream-brown@2x.webp);
+            }
+            }   
+        } 
+    }    
+}           
+        
+// tablet
+@media screen and (min-width:768px) and (max-width: 1279px) {
+    .products{
+        &__item--red::before,
+        &__item--yellow::before,
+        &__item--green::before {
+            width: 220px; 
+            height: 224px;
+        }
+        &__item--red::before {
+        background-image: url(../images/products/b-tablet/ice-cream-pink.png);
+            
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/b-tablet/ice-cream-pink@2x.png);
+            }
+            }
+            @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+            & {
+                background-image: url(../images/products/b-tablet/ice-cream-pink@2x.webp);
+            }
+            }
+        } 
+        &__item--yellow::before {
+        background-image: url(../images/products/b-tablet/ice-cream-yellow.png);
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/b-tablet/ice-cream-yellow@2x.png);
+            }
+            }
+            @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+            & {
+                background-image: url(../images/products/b-tablet/ice-cream-yellow@2x.webp);
+            }
+            }
+        } 
+        // green
+        &__item--green::before {
+        background-image: url(../images/products/b-tablet/ice-cream-brown.png);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/b-tablet/ice-cream-brown@2x.png);
+            }
+            }
+            @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+            & {
+                background-image: url(../images/products/b-tablet/ice-cream-brown@2x.webp);
+            }
+            }
+        } 
+    }
+} 
+
+@media screen and (min-width: 1280px) {
+    .products{
+        &__item--red::before,
+        &__item--yellow::before,
+        &__item--green::before {
+            width: 335px; 
+            height: 335px;
+        }
+        &__item--red::before {
+        background-image: url(../images/products/c-desktop/ice-cream-pink.png);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/c-desktop/ice-cream-pink@2x.png);
+            }
+            }
+            @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+            & {
+                background-image: url(../images/products/c-desktop/ice-cream-pink@2x.webp);
+            }
+            }
+        } 
+        &__item--yellow::before {
+        background-image: url(../images/products/c-desktop/ice-cream-yellow.png);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/c-desktop/ice-cream-yellow@2x.png);
+            }
+            }
+            @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+            & {
+                background-image: url(../images/products/c-desktop/ice-cream-yellow@2x.webp);
+            }
+            }
+        } 
+        &__item--green::before {
+        background-image: url(../images/products/c-desktop/ice-cream-brown.png);
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            & {
+                background-image: url(../images/products/c-desktop/ice-cream-brown@2x.png);
+            }
+            }
+            @media (min-device-pixel-ratio: 3),
+            (min-resolution: 288dpi),
+            (min-resolution: 3dppx) {
+            & {
+                background-image: url(../images/products/c-desktop/ice-cream-brown@2x.webp);
+            }
+            }
+        } 
+    }
+} 
+
+
