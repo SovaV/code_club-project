@@ -579,7 +579,8 @@
   }
 }
 
-.backdrop {
+// МОДАЛКА =========
+.header__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -603,7 +604,7 @@
   transform: scale(0);
 }
 
-.modal {
+.header__modal {
   position: relative;
   padding: 40px;
   overflow-y: scroll;
@@ -620,7 +621,7 @@
     max-width: 528px;
   }
 }
-.btn-close {
+.header__btn-close {
   position: absolute;
   display: flex;
   align-items: center;
@@ -639,4 +640,10 @@
   &:focus {
     fill: #2196f3;
   }
+}
+.header__modal-btn {
+  @extend %button-hh;
+  padding: 12px 35px;
+  color: var(--menu-font-color);
+  background-color: var(--secondary-color);
 }
