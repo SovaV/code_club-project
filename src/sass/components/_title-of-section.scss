@@ -18,6 +18,10 @@
     text-align: start;
     // margin-top: 16px;
   }
+
+  &--footer {
+    text-align: start;
+  }
 }
 
 // tablet
@@ -31,6 +35,10 @@
 
     &--advantages {
       text-transform: none;
+    }
+    
+    &--footer {
+      letter-spacing: 0.06em;
     }
   }
 }
