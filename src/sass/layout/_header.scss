@@ -647,3 +647,12 @@
   color: var(--menu-font-color);
   background-color: var(--secondary-color);
 }
+.header__contact-model {
+  display: flex;
+}
+
+.header__modal-img--shoc {
+  padding: 50px;
+  background-size: cover;
+  background-image: url(../images/header/mob/caramel.jpg);
+}
