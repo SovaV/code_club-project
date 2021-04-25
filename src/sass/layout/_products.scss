@@ -1,5 +1,6 @@
 .products{
     background: var(--bg-of-section);
+    // background: #fff;
 
     &__item {
         display: flex;
@@ -81,6 +82,7 @@
             margin-bottom: 30px;
             font-size: 14px;
             line-height: 1.5;
+            max-width: 200px;
         }
         &__subtitle::after{
             width: 26px;

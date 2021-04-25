@@ -34,69 +34,71 @@
     pointer-events: none;
 }
 .recipe-menu {
+    @media screen and (max-width:767px) {
+        width: 280px;
+        height: 410px;
+    }
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        width: 220px;
+        height: 425px;
+    }
+    @media screen and (min-width:1280px) {
+        width: 329px;
+        height: 460px;
+    }
+}
+
+.recipe-menu {
     position: absolute;
-    top: 55%;
-    width: 150px;
-    height: 200px;
+    padding: 80px 60px 40px;
+    top: 10%;
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 20px;
-    background-image: url(../images/products/pink-cloud.png);
+    background-image:url(../images/products/milk-drop.jpg);
    
     transition: opacity var(--main-animation);
     
     &__close-btn {
         position: absolute;
-        top: 4px;
-        right: 4px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 13px;
-        height: 13px;
+        top: 13px;
+        right: 18px;
+        width: 18px;
+        height: 18px;
         border-radius: 50%;
-        border-color: var(--mobmenu-bg-color);
         cursor: pointer;
-        color: var(--sup-font-color);
+        border-color: var(--recipe-text-color);        
+        color: var(--recipe-text-color);
+
         transition: color var(--main-animation);
     }
     &__close-icon {
         padding: 0;
-        fill: var(--secondary-color);
-        color: var(--secondary-color);
+        fill: currentColor;
         width: 15px;
         height: 15px;
     }
   
     &__title {
-        margin-top: 13px;
+        margin-bottom:20px;
         font-family: var(--title-font);
         font-weight: var(--font-weight-normal);
         font-size: 12px;
         line-height: 1.17;
         text-align: center;
         text-transform: uppercase;
-        // color: var(--btn-hover-color);
-
-        line-height: 1.15;
-
-        &--red {
-            color: rgb(112, 20, 74);
-        }
-        &--yellow {
-            color:rgb(112, 20, 74);
-        }
-        &--green {
-            color: rgb(112, 20, 74);
-        }
+        line-height: 1.15;        
     }
-    
+    &__title,
     &__list{
-        color:var(--tech-yellow-color);
+        color:rgb(150, 20, 91);
     }
     &__list,
     &__price,
     &__mass {
-        margin-top: 5px;
         font-family: var(--main-font);
         font-weight: var(--font-weight-bold);
         text-align: center;
@@ -104,13 +106,18 @@
         font-size: 11px;
         line-height: 1.5;
     }
-    &__item:not(:last-child) {
-        margin-bottom: 4px;
+    &__item {
+        margin-bottom: 10px;
     }
     &__mass,
     &__price {
         color: var(--desc-font-color);
     }
 }
-
-
+.recipe-menu{
+    &__close-btn:focus,
+    &__close-btn:hover{
+        border-color: var(--btn-hover-color);
+        color: var(--btn-hover-color);
+    }
+}
