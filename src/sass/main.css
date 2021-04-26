@@ -428,8 +428,8 @@ img {
 .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 42px 42px 42xpx 42px 42px 42px 42px;
-      grid-template-columns: 42px 42px 42xpx 42px 42px 42px 42px;
+  -ms-grid-columns: 42px 42px 42px 42px 42px 42px 42px;
+      grid-template-columns: 42px 42px 42px 42px 42px 42px 42px;
   -ms-grid-rows: 14px 14px 14px 14px 14px 14px 14px 14px 14px 14px;
       grid-template-rows: 14px 14px 14px 14px 14px 14px 14px 14px 14px 14px;
   /*@media (min-width: 640px) and (max-width: 999px) {
