@@ -10,7 +10,7 @@
   flex-direction: column;
   margin-bottom: 43px;
 }
-.fooer-list__item-list {
+.social-tel-list {
   align-self: flex-end;
 }
 .footer-title-wraper {
@@ -26,7 +26,7 @@
   padding-top: 22px;
   padding-bottom: 25px;
 }
-.fooer-list__item-list__item {
+.social-tel-list__item {
   display: flex;
   justify-content: flex-end;
 }
@@ -34,6 +34,11 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 1.83;
+  &:hover,
+  &:focus {
+    animation-name: heartBeat;
+    animation-duration: 1500ms;
+  }
 }
 .invitation-to-contact {
   color: var(--desc-font-color);
@@ -41,16 +46,16 @@
 .footer-contact {
   color: var(--secondary-color);
 }
-.fooer-list__item-list__item-social-list {
+.social-list {
   display: flex;
   margin-bottom: 46px;
 }
-.fooer-list__item-list__item-social-list-icon {
+.social-list__item {
   &:not(:last-child) {
     margin-right: 28px;
   }
 }
-.footer-social-link {
+.social-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +69,8 @@
   &:hover,
   &:focus {
     background-color: var(--secondary-color);
+    animation-name: flip;
+    animation-duration: 1500ms;
   }
 }
 @media screen and (min-width: 768px) {
@@ -108,7 +115,7 @@
   .footer-list {
     margin-bottom: 97px;
   }
-  .fooer-list__item-list__item-social-list {
+  .social-list {
     margin-bottom: 50px;
   }
 }
