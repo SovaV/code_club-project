@@ -1,5 +1,8 @@
+body {
+  height: 100vh;
+}
 .section-contacts {
-  background-color: var(--secondary-bg-color);
+background-image: linear-gradient(to top, var(--secondary-bg-color) 90%, transparent 90%);
 }
 
 @media screen and (max-width:767px) {
@@ -11,14 +14,15 @@
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .section-contacts {
-    padding-top: 119px;
-    padding-bottom: 158px;
+  background-image: linear-gradient(to top, var(--secondary-bg-color) 78%, transparent 78%);
+  padding-top: 119px;
+  padding-bottom: 158px;
   }
 }
 
 @media screen and (min-width: 1280px) {
 .section-contacts {
-  background-image: url(/images/contacts/contacts-bg.png);
+  background-image: url(/images/contacts/contacts-bg.png), linear-gradient(to top, var(--secondary-bg-color) 99%, transparent 99%);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0px 221px;
