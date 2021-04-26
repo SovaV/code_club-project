@@ -1,9 +1,4 @@
-.card-list {
-  border-top: 1px solid rgba(225, 225, 225, 1);
-  border-bottom: 1px solid rgba(225, 225, 225, 1);
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
+
 .card {
 font-family: var(--main-font);
 font-weight: 500;
@@ -24,9 +19,6 @@ border-radius: 4px;
 width: 80px;
 text-align: center;
 justify-content: space-around;
-}
-&__wrapper {
-  margin-bottom: 25px;
 }
 &__week {
 color: var(--desc-font-color);
@@ -54,10 +46,17 @@ transition: color var(--main-animation);
   color: var(--desc-font-color);
 }
 }
-
-&__contacts {
-  margin-top: 25px;
 }
+
+.card-list::after,
+.card-list::before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(225, 225, 225, 1);
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 
 .green {
