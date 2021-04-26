@@ -10,3 +10,12 @@
     width: 1050px;
   }
 }
+.header-hero__container {
+  @media screen and (max-width: 767px) {
+    position: relative;
+    width: 320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+  }
+}
