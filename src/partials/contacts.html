@@ -82,14 +82,14 @@
   </svg></button>
   </li>
   <li class="btn-list__item">
-  <button class="contacts-btn" type="button">Franchise<svg class="button-icon">
+  <button class="contacts-btn" type="button" franchise-data-modal-open>Franchise<svg class="button-icon">
     <use href="/images/sprite.svg#btn-icon"></use>
   </svg></button>
   </li>
 </ul>
 </div>
 </section>
-<!-- Modal -->
+<!-- Modal locations -->
 <div class="contacts-section__backdrop is-hidden" contacts-data-modal>
   <div class="contacts-section__modal">
     <p class="contacts-section__title">Our Location in Ukraine:</p>
@@ -99,5 +99,20 @@
     <button class="contacts-section__btn-close" type="button" contacts-data-modal-close>Close
     </button>
 </div>
+  </div>
+</div>
+<!-- modal franchise -->
+<div class="contacts-section__backdrop is-hidden" franchise-data-modal>
+  <div class="contacts-section__modal">
+    <p class="contacts-section__title franchise-title">Our Partners:</p>
+<ul class="partners-list">
+  <li class="partners-list__item"><a href="" class="partners-list__link">Good Icecream Inc.</a></li>
+  <li class="partners-list__item"><a href="" class="partners-list__link">Top Icecream Inc.</a></li>
+  <li class="partners-list__item"><a href="" class="partners-list__link">Better Icecream Inc.</a></li>
+  <li class="partners-list__item"><a href="" class="partners-list__link">The Best Icecream in your Life Inc.</a></li>
+</ul>
+    
+    <button class="contacts-section__btn-close" type="button" franchise-data-modal-close>Close
+    </button>
   </div>
 </div>

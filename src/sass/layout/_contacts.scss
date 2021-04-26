@@ -55,7 +55,7 @@ background-image: linear-gradient(to top, var(--secondary-bg-color) 90%, transpa
 .contacts-section__modal {
   position: relative;
   padding: 30px;
-  overflow-y: scroll;
+  overflow-y: scroll auto;
   margin: 0 auto;
   max-width: 450px;
 
@@ -104,5 +104,30 @@ letter-spacing: 0.04em;
 margin-bottom: 15px;
 @media (min-width: 768px) {
   font-size: 16px;
+}
+}
+
+.partners-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+font-family: var(--main-font);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.86;
+letter-spacing: 0.04em;
+&__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+&__link {
+  border-bottom: 1px solid rgba(225, 225, 225, 1);
+  color: var(--sub-font-color);
+  padding-bottom: 10px;
+  transition: color var(--main-animation), box-shadow var(--main-animation);
+&:hover,
+&:focus {
+  color: var(--secondary-color);
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
 }
 }
