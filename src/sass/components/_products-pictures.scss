@@ -1,17 +1,19 @@
 .products{
     &__item {
-    position: relative;
+    position: relative;       
     }
+   
     &__item--red::before,
     &__item--yellow::before,
     &__item--green::before {
         background-size: contain;
         content: "";
+        display: block;
         position: absolute;
         transform: translateY(-110%);
-        margin-bottom: 22px;
     }
 }
+
 
 // mobile
 @media screen and (max-width: 768px) {
