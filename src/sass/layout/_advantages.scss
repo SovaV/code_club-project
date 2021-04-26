@@ -1,5 +1,6 @@
 .advantages {
   background-color: var(--secondary-bg-color);
+  padding-bottom: 97px;
 }
 
 .advantages__text {
@@ -72,6 +73,10 @@
 
 // tablet
 @media screen and (min-width: 768px) {
+  .advantages {
+    padding-bottom: 140px;
+  }
+
   .advantages__item {
     flex-basis: calc(100% / 3 - 60px);
     height: 226px;
@@ -92,6 +97,10 @@
 
 //desktop
 @media screen and (min-width: 1280px) {
+  .advantages {
+    padding-bottom: 139px;
+  }
+
   .advantages__list {
     margin-left: -30px;
   }
