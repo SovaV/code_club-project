@@ -240,7 +240,7 @@
 .hero {
   position: relative;
   padding-top: 125px;
-  padding-bottom: 137px;
+  padding-bottom: 140px;
   @media (max-width: 767px) {
     overflow: hidden;
   }
@@ -609,7 +609,7 @@
   padding: 40px;
   overflow-y: scroll;
   margin: 0 auto;
-  max-width: 450px;
+  max-width: 230px;
 
   background-color: #ffffff;
 
@@ -617,8 +617,11 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  @media (min-width: 1200px) {
-    max-width: 528px;
+  @media (min-width: 768px) {
+    max-width: 410px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 770px;
   }
 }
 .header__btn-close {
@@ -643,16 +646,43 @@
 }
 .header__modal-btn {
   @extend %button-hh;
+
+  margin-left: auto;
+  margin-right: auto;
   padding: 12px 35px;
   color: var(--menu-font-color);
   background-color: var(--secondary-color);
 }
-.header__contact-model {
-  display: flex;
+.header__model-title {
+  text-align: center;
 }
+.header__model-choice {
+  display: block;
+  margin-bottom: 25px;
+  justify-content: center;
 
-.header__modal-img--shoc {
-  padding: 50px;
-  background-size: cover;
-  background-image: url(../images/header/mob/caramel.jpg);
+  padding: 0px;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.header__modal-item {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.header__modal-img {
+  align-items: center;
+}
+.header__modal-name {
+  padding: 20px 30px;
+  text-align: center;
+}
+.header__modal-name--text {
+  text-align: center;
+}
+.header__modal-img {
+  max-width: 150px;
 }
