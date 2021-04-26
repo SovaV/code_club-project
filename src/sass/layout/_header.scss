@@ -50,6 +50,7 @@
 .header-hero {
   width: 100%;
   background-color: #ffb8ca;
+  overflow: hidden;
 }
 .header__top {
   position: relative;
@@ -66,8 +67,7 @@
   right: 0;
   top: 83px;
 }
-.hero__circle-img {
-}
+
 // logo
 
 .header__logo {
