@@ -3,17 +3,25 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-// @import './example';
-@import './base/container';
-@import './base/common';
-
 @import './utils/variables';
 @import './utils/visually-hidden';
 
-@import './components/title-of-section';
+@import './base/common';
+@import './base/container';
+
 @import './components/title-label';
+@import './components/title-of-section';
 @import './components/products-pictures';
 @import './components/recipe-menu';
+@import './components/contacts-card';
+@import './components/contacts-list';
+@import './components/contacts-btn';
 
+@import './layout/header';
 @import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer_reviews';
+@import './layout/contacts';
+@import './layout/footer';

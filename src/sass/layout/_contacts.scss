@@ -1,0 +1,28 @@
+.section-contacts {
+  background-color: var(--secondary-bg-color);
+}
+
+@media screen and (max-width:767px) {
+.section-contacts {
+  padding-top: 86px;
+  padding-bottom: 113px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section-contacts {
+    padding-top: 119px;
+    padding-bottom: 158px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+.section-contacts {
+  background-image: url(/images/contacts/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 221px;
+  padding-top: 132px;
+  padding-bottom: 165px;
+}
+}
