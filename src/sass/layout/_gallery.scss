@@ -50,8 +50,8 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 35px 35px 35px 35px 35px 35px 35px;
-  grid-template-rows: 12px 12px 12px 12px 12px 12px 12px 12px 12px 12px;
+  grid-template-columns: 42px 42px 42xpx 42px 42px 42px 42px;
+  grid-template-rows: 14px 14px 14px 14px 14px 14px 14px 14px 14px 14px;
 
   @media (min-width: 768px) {
     grid-template-columns: 84px 84px 84px 84px 84px 84px 84px;
