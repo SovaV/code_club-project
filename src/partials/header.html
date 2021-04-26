@@ -28,24 +28,24 @@
           </li>
         </ul>
       </nav>
-      <button type="button" class="burger-btn" hh-data-menu-button>
+      <button type="button" class="burger-btn" data-menu-button>
         <svg width="20" height="12" class="burger-icon">
           <use href="./images/header/sprite.svg#icon-burger"></use>
         </svg>
       </button>
 
-      <button class="header__btn" type="button" hh-data-modal-open>
+      <button class="header__btn" type="button" data-modalbd-open>
         Buy now
         <span class="arrow"></span>
       </button>
     </div>
-    <div class="mobile is-open" hh-data-menu>
-      <button type="button" class="burger-close" hh-data-menu-close>
+    <div class="mobile is-open" data-menu>
+      <button type="button" class="burger-close" data-menu-close>
         <svg width="20" height="12" class="burger-icon">
           <use href="./images/header/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      <button class="mobile__btn" type="button" mobile-hh-data-modal-open>
+      <button class="mobile__btn" type="button" data-modalmd-open>
         Buy now
         <span class="mobile__arrow arrow"></span>
       </button>
@@ -68,12 +68,53 @@
       </ul>
     </div>
 
-    <section class="hero">
-      <div class="hero__inner">
-        <h1 class="hero__title">
-          ice cream made with <span class="title-additions">passion</span>
-        </h1>
+    <!-- HERO  -->
 
+    <section class="hero">
+      <div class="hero__circle">
+        <picture>
+          <source
+            srcset="./images/header/desk/Ellipse.png 1x, ./images/header/desk/Ellipse@2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="./images/header/tablet/Ellipse.png 1x, ./images/header/tablet/Ellipse@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/header/mob/Ellipse.png 1x, ./images/header/mob/Ellipse@2x.png 2x"
+          />
+
+          <img class="hero__circle-img" src="./images/header/mob/Ellipse.png" alt="" />
+        </picture>
+        <picture>
+          <source
+            srcset="./images/header/desk/ice.png 1x, ./images/header/desk/ice@2x.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="./images/header/tablet/ice.png 1x, ./images/header/tablet/ice@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source srcset="./images/header/mob/ice.png 1x, ./images/header/mob/ice@2x.png 2x" />
+
+          <img class="hero__box-img" src="./images/header/mob/ice.png" alt="ice" />
+        </picture>
+      </div>
+      <div class="hero__inner">
+        <div class="hero__search">
+          <h1 class="hero__title">
+            ice cream made with <span class="title-additions">passion</span>
+          </h1>
+          <ul class="hero__search-list">
+            <li class="hero__search-item">
+              <a class="hero__search-link hero__search-link--pink" href="#product">Products</a>
+            </li>
+            <li class="hero__search-item">
+              <a class="hero__search-link" href="#about">How it’s made?</a>
+            </li>
+          </ul>
+        </div>
         <div class="hero__inner-wrap">
           <div class="hero__inner-box">
             <span class="hero__inner-circle"></span>
@@ -88,34 +129,10 @@
           </div>
         </div>
       </div>
-      <div class="hero__search">
-        <ul class="hero__search-list">
-          <li class="hero__search-item">
-            <a class="hero__search-link hero__search-link--pink" href="#product">Products</a>
-          </li>
-          <li class="hero__search-item">
-            <a class="hero__search-link" href="#about">How it’s made?</a>
-          </li>
-        </ul>
-      </div>
 
       <!-- hero wrap  -->
       <div class="hero__wrap">
-        <span class="hero__box-circle">
-          <picture>
-            <source
-              srcset="./images/header/desk/ice.png 1x, ./images/header/desk/ice@2x.png 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="./images/header/tablet/ice.png 1x, ./images/header/tablet/ice@2x.png 2x"
-              media="(min-width: 768px)"
-            />
-            <source srcset="./images/header/mob/ice.png 1x, ./images/header/mob/ice@2x.png 2x" />
-
-            <img class="hero__box-img" src="./images/header/mob/ice.png" alt="ice" />
-          </picture>
-        </span>
+        <span class="hero__box-circle"> </span>
       </div>
       <div class="hero__thumb">
         <picture>
@@ -177,60 +194,60 @@
   </div>
 </section>
 <!-- /* ======== МОДАЛКА ======== */ -->
-<div class="header__backdrop is-hidden" hh-data-modal mobile-hh-data-modal>
+<div class="header__backdrop is-hiddens" data-modalh>
   <div class="header__modal">
-    <button class="header__btn-close" type="button" hh-data-modal-close>
+    <button class="header__btn-close" type="button" data-modalh-close>
       <svg width="18" height="18" class="close">
         <use href="./images/header/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <div class="header__modal-menu">
-      <h3 class="header__model-title">choose e a taste</h3>
+      <h3 class="header__model-title">choose a taste</h3>
       <ul class="header__model-choice">
         <li class="header__modal-item">
-          <a href="">
+          <a href="" class="header__modal-link">
             <div>
               <img class="header__modal-img" src="./images/header/mob/choc.png" alt="" />
             </div>
             <div class="header__modal-name">
-              <b class="header__modal-name--text" for="user-name">chocolate</b>
+              <b class="header__modal-name--text">chocolate</b>
             </div>
           </a>
         </li>
 
         <li class="header__modal-item">
-          <a href="">
+          <a href="" class="header__modal-link">
             <div>
               <img class="header__modal-img" src="./images/header/mob/caram.png" alt="" />
             </div>
             <div class="header__modal-name">
-              <b class="header__modal-name--text" for="user-name">caramel</b>
+              <b class="header__modal-name--text">caramel</b>
             </div>
           </a>
         </li>
 
         <li class="header__modal-item">
-          <a href="">
+          <a href="" class="header__modal-link">
             <div>
               <img class="header__modal-img" src="./images/header/mob/plombir.png" alt="" />
             </div>
             <div class="header__modal-name">
-              <b class="header__modal-name--text" for="user-name">vanilla</b>
+              <b class="header__modal-name--text">vanilla</b>
             </div>
           </a>
         </li>
         <li class="header__modal-item">
-          <a href="">
+          <a href="" class="header__modal-link">
             <div>
-              <img class="header__modal-img" src="./images/header/mob/jam.png" alt="" />
+              <img class="header__modal-img" src="./images/header/mob/berry.png" alt="" />
             </div>
             <div class="header__modal-name">
-              <b class="header__modal-name--text" for="user-name">jam</b>
+              <b class="header__modal-name--text">berry</b>
             </div>
           </a>
         </li>
       </ul>
-      <button class="header__modal-btn" type="submit">Отправить</button>
+      <button class="header__modal-btn" type="submit">buy</button>
     </div>
   </div>
 </div>
