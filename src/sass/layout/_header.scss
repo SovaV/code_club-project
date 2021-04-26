@@ -133,7 +133,6 @@
   }
 }
 .header__link--mobile {
-  padding-left: 21px;
   font-size: 14px;
 }
 .arrow {
@@ -224,24 +223,13 @@
 
 // горизонтьльны перегородки
 .mobile__item {
-  position: relative;
-  padding-bottom: 12px;
-  padding-top: 12px;
+  display: flex;
+  padding: 12px 0px 12px 21px;
 
-  &:last-child::after,
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100vw;
-    height: 1px;
-    border: 1px solid #e18298;
-  }
-  &:last-child::after {
-    bottom: 0;
-    left: 0;
-  }
-  &::before {
-    top: 0;
+  border-top: 1px solid #e18298;
+  border-radius: 0px;
+  @media (min-width: 768px) {
+    padding-left: 24px;
   }
 }
 
@@ -249,7 +237,7 @@
 
 .hero {
   padding-top: 125px;
-  padding-bottom: 140px;
+  padding-bottom: 160px;
 
   @media (min-width: 768px) {
     position: relative;
@@ -439,7 +427,6 @@
 .hero__search {
   display: inline-flex;
 
-  margin-bottom: 19px;
   @media (min-width: 1280px) {
     margin-bottom: 56px;
   }
