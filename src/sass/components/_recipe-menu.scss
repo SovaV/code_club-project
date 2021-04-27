@@ -84,9 +84,9 @@
         right: 18px;
         width: 18px;
         height: 18px;
-        border-radius: 50%;
         cursor: pointer;
-        border-color: var(--recipe-text-color);        
+        border-color: transparent; 
+        background-color: transparent;       
         color: var(--recipe-text-color);
 
         transition: color var(--main-animation);
@@ -133,7 +133,8 @@
 .recipe-menu{
     &__close-btn:focus,
     &__close-btn:hover{
-        border-color: var(--btn-hover-color);
-        color: var(--btn-hover-color);
+        background-color: var(--recipe-text-color);
+        border-radius: 50%;
+        color: #fff;
     }
 }

@@ -29,8 +29,10 @@
 
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: var(--btn-hover-color);
+    color: #fff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
   }
 }
 .header__btn {
@@ -167,14 +169,36 @@
 }
 .burger-close {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 23px;
   right: 28px;
+  width: 25px;
+  height: 25px;
   background-color: transparent;
   border: none;
   padding: 0;
+  border-radius: 50%;
+  border-color:transparent;
+  transform: scale(1);
+
+  transition:  background-color var(--main-animation),
+  border var(--main-animation), transform var(--main-animation),
+  border-radius var(--main-animation);
+
+    &:focus,
+    &:hover {
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: var(--secondary-color);
+      transform: scale(1.1);
+    }
 }
 .burger-icon {
-  display: block;
+  display: none;
+  width: 14px;
+  height: 14px;
   fill: var(--secondary-color);
 }
 // mobile
@@ -753,6 +777,7 @@
     max-width: 805px;
   }
 }
+
 .header__btn-close {
   position: absolute;
   display: flex;
@@ -760,13 +785,24 @@
   justify-content: center;
   top: 20px;
   right: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background-color: var(--secondary-color);
-  transition: filter var(--main-animation), background-color var(--main-animation);
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: transparent;  
+  transform: scale(1);
+
+  transition:  background-color var(--main-animation),
+  border var(--main-animation), transform var(--main-animation),
+  border-radius var(--main-animation);
+
+    &:focus,
+    &:hover {
+      border-radius: 50%;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: var(--secondary-color);
+      transform: scale(1.1);
 
   @media (min-width: 768px) {
     top: 40px;
@@ -784,13 +820,10 @@
   margin-left: auto;
   margin-right: auto;
   padding: 12px 35px;
-  color: var(--menu-font-color);
-  background-color: var(--secondary-color);
-  &:focus,
-  &:hover {
-    background-color: var(--btn-hover-color);
-  }
-}
+
+  color: var(--secondary-color);
+  background-color: #FFF;
+
 .header__model-title {
   font-family: var(--title-font);
   font-style: normal;
