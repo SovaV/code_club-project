@@ -25,7 +25,8 @@
   color: var(--secondary-color);
   z-index: 1;
 
-  transition: background-color var(--main-animation), filter var(--main-animation);
+  transition: background-color var(--main-animation), filter var(--main-animation),
+    color var(--main-animation);
 
   &:hover,
   &:focus {
@@ -547,6 +548,10 @@
     height: 324px;
     width: 322px;
   }
+  @media (min-width: 1280px) {
+    height: 538px;
+    width: 538px;
+  }
 }
 .mgo-widget-call_pulse:after {
   margin: auto 0 auto -32.5px;
@@ -558,7 +563,7 @@
     height: 324px;
     width: 322px;
   }
-  @media (min-width: 1280x) {
+  @media (min-width: 1280px) {
     height: 538px;
     width: 538px;
   }
@@ -710,6 +715,16 @@
     line-height: 140%;
   }
 }
+.hero__thumb-link {
+  border-radius: 50%;
+  border-color: transparent;
+  cursor: pointer;
+  transition: border-color var(--main-animation);
+  &:hover,
+  &:focus {
+    border-color: var(--btn-hover-color);
+  }
+}
 
 // =hero thumbnail=
 .hero__thumbnail {
@@ -791,7 +806,8 @@
   transform: scale(1);
 
   transition: background-color var(--main-animation), border var(--main-animation),
-    transform var(--main-animation), border-radius var(--main-animation);
+    transform var(--main-animation), border-radius var(--main-animation),
+    filter var(--main-animation);
 
   &:focus,
   &:hover {
@@ -816,9 +832,6 @@
   margin-left: auto;
   margin-right: auto;
   padding: 12px 35px;
-
-  color: var(--secondary-color);
-  background-color: #fff;
 }
 .header__model-title {
   font-family: var(--title-font);
