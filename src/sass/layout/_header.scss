@@ -143,6 +143,7 @@
   padding: 2px;
   transform: rotate(-45deg);
 }
+// burger-modal
 
 // Бургер
 .burger-btn {
@@ -635,11 +636,17 @@
   width: 30px;
   height: 30px;
   background-color: var(--secondary-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: filter 250ms cubic-bezier(0.5, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.5, 0, 0.2, 1);
 
   @media (min-width: 768px) {
     top: 40px;
     right: 40px;
+  }
+  &:focus,
+  &:hover {
+    background-color: var(--btn-hover-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
 .header__modal-btn {
@@ -650,6 +657,10 @@
   padding: 12px 35px;
   color: var(--menu-font-color);
   background-color: var(--secondary-color);
+  &:focus,
+  &:hover {
+    background-color: var(--btn-hover-color);
+  }
 }
 .header__model-title {
   font-family: var(--title-font);
