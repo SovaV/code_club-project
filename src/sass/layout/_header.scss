@@ -25,8 +25,7 @@
   color: var(--secondary-color);
   z-index: 1;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--main-animation), filter var(--main-animation);
 
   &:hover,
   &:focus {
@@ -103,10 +102,11 @@
 }
 
 .header__menu {
+  display: none;
   z-index: 1;
   margin-left: auto;
-  @media screen and (max-width: 1280px) {
-    display: none;
+  @media screen and (min-width: 1280px) {
+    display: inline-flex;
   }
 }
 .header__list {
@@ -131,6 +131,9 @@
   &:focus {
     color: var(--secondary-color);
   }
+}
+.header__link--current {
+  color: var(--secondary-color);
 }
 .header__link--mobile {
   font-size: 14px;
@@ -158,6 +161,9 @@
   @media (max-width: 1280px) {
     margin-left: auto;
   }
+  @media (min-width: 1280px) {
+    display: none;
+  }
 }
 .burger-close {
   position: absolute;
@@ -168,11 +174,8 @@
   padding: 0;
 }
 .burger-icon {
-  display: none;
+  display: block;
   fill: var(--secondary-color);
-  @media (max-width: 1280px) {
-    display: block;
-  }
 }
 // mobile
 .mobile {
@@ -186,11 +189,10 @@
   flex-direction: column;
   pointer-events: none;
   overflow: scroll;
-  padding: 60px 0px 60px 0px;
+  padding-top: 60px;
   background-color: #e17992;
   transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--main-animation), opacity var(--main-animation);
 
   &.is-open {
     opacity: 1;
@@ -227,10 +229,13 @@
   display: flex;
   padding: 12px 0px 12px 21px;
 
-  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
   border-radius: 0px;
   @media (min-width: 768px) {
     padding-left: 24px;
+  }
+  &:first-child {
+    border-top: 1px solid #e18298;
   }
 }
 
@@ -418,12 +423,170 @@
     height: 538px;
     width: 538px;
   }
+  &:focus .mgo-widget-call_pulse,
+  &:hover .mgo-widget-call_pulse {
+    animation: shake 0.5s infinite ease-in-out;
+    animation-delay: 0s;
+    background: radial-gradient(
+      rgb(219, 88, 118),
+      rgb(222, 100, 129),
+      rgb(226, 112, 141),
+      rgb(229, 124, 152),
+      rgb(232, 136, 163),
+      rgb(235, 148, 174),
+      rgb(239, 159, 186),
+      rgb(242, 171, 197),
+      rgb(245, 183, 208)
+    );
+  }
+  &:hover .mgo-widget-call_pulse:after,
+  &:focus .mgo-widget-call_pulse:after {
+    background: radial-gradient(
+      rgb(219, 88, 118),
+      rgb(222, 100, 129),
+      rgb(226, 112, 141),
+      rgb(199, 104, 126),
+      rgb(203, 117, 137),
+      rgb(208, 130, 148),
+      rgb(212, 143, 159),
+      rgb(216, 156, 170),
+      rgb(221, 169, 181)
+    );
+    animation: pulse 1s infinite ease-in-out;
+  }
+  &:hover .mgo-widget-call_pulse:before,
+  &:focus .mgo-widget-call_pulse:before {
+    background: radial-gradient(
+      rgb(219, 88, 118),
+      rgb(222, 100, 129),
+      rgb(226, 112, 141),
+      rgb(199, 104, 126),
+      rgb(203, 117, 137),
+      rgb(208, 130, 148),
+      rgb(212, 143, 159),
+      rgb(216, 156, 170),
+      rgb(221, 169, 181)
+    );
+    animation: pulse 1s infinite ease-in-out;
+  }
 }
 .hero__thumb-img:focus,
 .hero__thumb-img:hover {
   animation-name: tada;
   animation-duration: 1500ms;
 }
+
+.mgo-widget-call_pulse {
+  height: 250px;
+  width: 248px;
+
+  border-radius: 100%;
+  position: absolute;
+  left: 14%;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  opacity: 0.75;
+  @media (min-width: 768px) {
+    left: 17%;
+    height: 220px;
+    width: 218px;
+  }
+  @media (min-width: 1280px) {
+    left: 15%;
+    height: 375px;
+    width: 375px;
+  }
+}
+.mgo-widget-call_pulse:after,
+.mgo-widget-call_pulse:before {
+  content: '';
+  position: absolute;
+  left: -6%;
+  bottom: 0;
+  top: 0;
+  border-radius: 100%;
+  @media (min-width: 768px) {
+    left: -9%;
+  }
+  @media (min-width: 1280px) {
+    left: -13%;
+  }
+}
+.mgo-widget-call_pulse:before {
+  margin: auto 0 auto -32.5px;
+  height: 346px;
+  width: 344px;
+  opacity: 0.5;
+  animation-delay: 0.6s;
+  @media (min-width: 768px) {
+    height: 538px;
+    width: 538px;
+  }
+}
+.mgo-widget-call_pulse:after {
+  margin: auto 0 auto -32.5px;
+  height: 346px;
+  width: 344px;
+  animation-delay: 0.5s;
+  opacity: 0.25;
+  @media (min-width: 768px) {
+    height: 324px;
+    width: 322px;
+  }
+  @media (min-width: 768px) {
+    height: 538px;
+    width: 538px;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    // transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.hero__box-img {
+  position: absolute;
+  top: 9px;
+  left: 80px;
+  transition: filter var(--main-animation);
+
+  @media (min-width: 768px) {
+    top: 30px;
+    left: 73px;
+  }
+  @media (min-width: 1280px) {
+    top: 58px;
+    left: 130px;
+  }
+  &:hover,
+  &:focus {
+    filter: drop-shadow(0px -5px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
 // hero search
 .hero__search {
   display: inline-flex;
@@ -456,13 +619,8 @@
   padding: 7px 14px;
   margin-right: 14px;
   line-height: 1.28;
-  overflow: hidden;
-  line-height: 1.28;
 
-  overflow: hidden;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--main-animation), filter var(--main-animation);
 
   @media (min-width: 1280px) {
     font-size: 14px;
@@ -481,41 +639,11 @@
 .hero__search-link--pink {
   color: var(--menu-font-color);
   background-color: var(--secondary-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--main-animation), filter var(--main-animation);
 
-  &::before {
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
-  }
-
-  &:hover::before,
-  &:focus::before {
-    left: 150px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   &:hover,
   &:focus {
     background-color: var(--btn-hover-color);
-  }
-}
-
-.hero__box-img {
-  position: absolute;
-  top: 9px;
-  left: 80px;
-  transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media (min-width: 768px) {
-    top: 30px;
-    left: 73px;
-  }
-  @media (min-width: 1280px) {
-    top: 58px;
-    left: 130px;
-  }
-  &:hover,
-  &:focus {
-    filter: drop-shadow(0px -5px 4px rgba(0, 0, 0, 0.25));
   }
 }
 
@@ -584,8 +712,7 @@
   transform: scale(1);
   overflow-y: auto;
   background-color: rgba(212, 20, 67, 0.2);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--main-animation), opacity var(--main-animation);
 
   padding: 93px 15px;
   z-index: 10;
@@ -636,8 +763,7 @@
   width: 30px;
   height: 30px;
   background-color: var(--secondary-color);
-  transition: filter 250ms cubic-bezier(0.5, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.5, 0, 0.2, 1);
+  transition: filter var(--main-animation), background-color var(--main-animation);
 
   @media (min-width: 768px) {
     top: 40px;
@@ -687,14 +813,11 @@
   }
 }
 .header__modal-item {
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    filter 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover .header__modal-img,
   &:focus .header__modal-img {
     filter: drop-shadow(0px -5px 4px rgba(0, 0, 0, 0.25));
     cursor: pointer;
     transform: scale(1.1);
-    transition: transform 0.5s;
   }
   &:hover .header__modal-name--text,
   &:focus .header__modal-name--text {
@@ -706,6 +829,7 @@
   }
 }
 .header__modal-img {
+  transition: transform var(--main-animation), filter var(--main-animation);
   align-items: center;
   @media (min-width: 768px) {
     max-width: 150px;
@@ -724,4 +848,5 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--secondary-color);
+  transition: color var(--main-animation);
 }

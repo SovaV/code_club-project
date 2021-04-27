@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="home">
   <div class="header-hero__container container">
     <div class="header__top">
       <a href="" class="header__logo animate__animated animate__flip">
@@ -11,20 +11,20 @@
       </a>
       <nav class="header__menu">
         <ul class="header__list list">
-          <li class="header__item item">
-            <a href="" class="header__link link"> Home</a>
+          <li class="header__item">
+            <a href="#home" class="header__link header__link--current scrollto"> Home</a>
           </li>
-          <li class="header__item item">
-            <a href="#product" class="header__link link"> About us</a>
+          <li class="header__item">
+            <a href="#advantages" class="header__link scrollto"> About us</a>
           </li>
-          <li class="header__item item">
-            <a href="#about" class="header__link link"> How it’s made?</a>
+          <li class="header__item">
+            <a href="#about" class="header__link scrollto"> How it’s made?</a>
           </li>
-          <li class="header__item item">
-            <a href="" class="header__link link">Our products</a>
+          <li class="header__item">
+            <a href="#products" class="header__link link scrollto">Our products</a>
           </li>
-          <li class="header__item item">
-            <a href="" class="header__link link">Contact</a>
+          <li class="header__item">
+            <a href="#contacts" class="header__link link scrollto">Contact</a>
           </li>
         </ul>
       </nav>
@@ -52,19 +52,21 @@
       </button>
       <ul class="mobile__list list">
         <li class="mobile__item">
-          <a href="" class="header__link header__link--mobile">Home</a>
+          <a href="#home" class="header__link header__link--mobile header__link--current scrollto"
+            >Home</a
+          >
         </li>
         <li class="mobile__item">
-          <a href="#about" class="header__link header__link--mobile">About us</a>
+          <a href="#advantages" class="header__link header__link--mobile scrollto">About us</a>
         </li>
         <li class="mobile__item">
-          <a href="#products" class="header__link header__link--mobile">How it’s made?</a>
+          <a href="#about" class="header__link header__link--mobile scrollto">How it’s made?</a>
         </li>
         <li class="mobile__item">
-          <a href="#product" class="header__link header__link--mobile">Our products</a>
+          <a href="#product" class="header__link header__link--mobile scrollto">Our products</a>
         </li>
         <li class="mobile__item">
-          <a href="" class="header__link header__link--mobile">Contact</a>
+          <a href="#contacts" class="header__link header__link--mobile scrollto">Contact</a>
         </li>
       </ul>
     </div>
@@ -92,17 +94,20 @@
       <div class="hero__search">
         <ul class="hero__search-list">
           <li class="hero__search-item">
-            <a class="hero__search-link hero__search-link--pink" href="#products">Products</a>
+            <a class="hero__search-link hero__search-link--pink scrollto" href="#products"
+              >Products</a
+            >
           </li>
           <li class="hero__search-item">
-            <a class="hero__search-link" href="#about">How it’s made?</a>
+            <a class="hero__search-link scrollto" href="#about">How it’s made?</a>
           </li>
         </ul>
       </div>
 
       <!-- hero wrap  -->
       <div class="hero__wrap">
-        <span class="hero__box-circle">
+        <div class="hero__box-circle">
+          <div class="mgo-widget-call_pulse"></div>
           <picture>
             <source
               srcset="./images/header/desk/ice.png 1x, ./images/header/desk/ice@2x.png 2x"
@@ -116,7 +121,7 @@
 
             <img class="hero__box-img" src="./images/header/mob/ice.png" alt="ice" />
           </picture>
-        </span>
+        </div>
       </div>
       <div class="hero__thumb">
         <picture>
