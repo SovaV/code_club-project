@@ -30,7 +30,7 @@
       </nav>
 
       <button type="button" class="burger-btn" data-menu-button data-modal-open-bn>
-        <svg width="20" height="12" class="burger-icon">
+        <svg class="burger-icon">
           <use href="./images/header/sprite.svg#icon-burger"></use>
         </svg>
       </button>
@@ -63,7 +63,7 @@
           <a href="#about" class="header__link header__link--mobile scrollto">How it’s made?</a>
         </li>
         <li class="mobile__item">
-          <a href="#product" class="header__link header__link--mobile scrollto">Our products</a>
+          <a href="#products" class="header__link header__link--mobile scrollto">Our products</a>
         </li>
         <li class="mobile__item">
           <a href="#contacts" class="header__link header__link--mobile scrollto">Contact</a>
@@ -144,22 +144,24 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et
           </p>
-          <picture>
-            <source
-              srcset="./images/header/desk/arrow.png 1x, ./images/header/desk/arrow@2x.png 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="./images/header/tablet/arrow.png 1x, ./images/header/tablet/arrow@2x.png 2x"
-              media="(min-width: 768px)"
-            />
+          <button class="hero__thumb-link">
+            <picture>
+              <source
+                srcset="./images/header/desk/arrow.png 1x, ./images/header/desk/arrow@2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="./images/header/tablet/arrow.png 1x, ./images/header/tablet/arrow@2x.png 2x"
+                media="(min-width: 768px)"
+              />
 
-            <img
-              class="hero__thumb-img--arrow"
-              src="./images/header/tablet/arrow.png"
-              alt="arrow"
-            />
-          </picture>
+              <img
+                class="hero__thumb-img--arrow"
+                src="./images/header/tablet/arrow.png"
+                alt="arrow"
+              />
+            </picture>
+          </button>
         </div>
       </div>
       <div class="hero__thumbnail">
