@@ -1,3 +1,4 @@
+
 .arrow-btn {
     display: flex;
     align-items: center;
@@ -7,7 +8,13 @@
     border-radius: 50%;
     border-color: transparent;
     cursor: pointer;
-    transition: border-color var(--main-animation);
+    transform: scale(1);
+    transition: border-color var(--main-animation), transform var(--main-animation);
+
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+    }
     
     &--red:hover,
     &--red:focus{
@@ -88,8 +95,13 @@
         border-color: transparent; 
         background-color: transparent;       
         color: var(--recipe-text-color);
-
-        transition: color var(--main-animation);
+        transform: scale(1);
+        transition: color var(--main-animation), transform var(--main-animation);
+    
+            &:hover,
+            &:focus {
+                transform: scale(1.2);
+            }
     }
     &__close-icon {
         padding: 0;
@@ -137,4 +149,9 @@
         border-radius: 50%;
         color: #fff;
     }
+}
+
+.contacts-section__btn-close--products {
+    width: 50px;
+    height: 20px;
 }
