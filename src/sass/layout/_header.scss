@@ -457,15 +457,18 @@
   &:hover .mgo-widget-call_pulse:before,
   &:focus .mgo-widget-call_pulse:before {
     background: radial-gradient(
-      rgb(219, 88, 118),
-      rgb(222, 100, 129),
-      rgb(226, 112, 141),
-      rgb(199, 104, 126),
-      rgb(203, 117, 137),
-      rgb(208, 130, 148),
-      rgb(212, 143, 159),
-      rgb(216, 156, 170),
-      rgb(221, 169, 181)
+      rgb(245, 133, 236),
+      rgb(242, 134, 233),
+      rgb(238, 135, 231),
+      rgb(235, 136, 228),
+      rgb(232, 137, 225),
+      rgb(229, 138, 222),
+      rgb(225, 139, 220),
+      rgb(222, 140, 217),
+      rgb(219, 141, 214),
+      rgb(216, 142, 211),
+      rgb(212, 143, 209),
+      rgb(209, 144, 206)
     );
     animation: pulse 1s infinite ease-in-out;
   }
