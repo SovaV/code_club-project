@@ -32,7 +32,6 @@
     background-color: var(--btn-hover-color);
     color: #fff;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    
   }
 }
 .header__btn {
@@ -180,20 +179,19 @@
   border: none;
   padding: 0;
   border-radius: 50%;
-  border-color:transparent;
+  border-color: transparent;
   transform: scale(1);
 
-  transition:  background-color var(--main-animation),
-  border var(--main-animation), transform var(--main-animation),
-  border-radius var(--main-animation);
+  transition: background-color var(--main-animation), border var(--main-animation),
+    transform var(--main-animation), border-radius var(--main-animation);
 
-    &:focus,
-    &:hover {
-      border-radius: 50%;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background-color: var(--secondary-color);
-      transform: scale(1.1);
-    }
+  &:focus,
+  &:hover {
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+  }
 }
 .burger-icon {
   display: none;
@@ -790,20 +788,19 @@
   height: 30px;
   border-radius: 50%;
   border-color: transparent;
-  background-color: transparent;  
+  background-color: transparent;
   transform: scale(1);
 
-  transition:  background-color var(--main-animation),
-  border var(--main-animation), transform var(--main-animation),
-  border-radius var(--main-animation);
+  transition: background-color var(--main-animation), border var(--main-animation),
+    transform var(--main-animation), border-radius var(--main-animation);
 
-    &:focus,
-    &:hover {
-      border-radius: 50%;
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      background-color: var(--secondary-color);
-      transform: scale(1.1);
-
+  &:focus,
+  &:hover {
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--secondary-color);
+    transform: scale(1.1);
+  }
   @media (min-width: 768px) {
     top: 40px;
     right: 40px;
@@ -822,8 +819,8 @@
   padding: 12px 35px;
 
   color: var(--secondary-color);
-  background-color: #FFF;
-
+  background-color: #fff;
+}
 .header__model-title {
   font-family: var(--title-font);
   font-style: normal;
