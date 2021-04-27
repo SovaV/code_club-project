@@ -194,7 +194,6 @@
   }
 }
 .burger-icon {
-  display: none;
   width: 14px;
   height: 14px;
   fill: var(--secondary-color);
@@ -545,8 +544,8 @@
   opacity: 0.5;
   animation-delay: 0.6s;
   @media (min-width: 768px) {
-    height: 538px;
-    width: 538px;
+    height: 324px;
+    width: 322px;
   }
 }
 .mgo-widget-call_pulse:after {
@@ -559,7 +558,7 @@
     height: 324px;
     width: 322px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1280x) {
     height: 538px;
     width: 538px;
   }
