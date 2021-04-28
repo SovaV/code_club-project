@@ -51,8 +51,14 @@ background-image: linear-gradient(to top, var(--secondary-bg-color) 90%, transpa
   pointer-events: none;
   transform: scale(0);
 }
-
+.map {
+width: 100%;
+height: 350px;
+}
 .contacts-section__modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   padding: 30px;
   overflow-y: scroll auto;
