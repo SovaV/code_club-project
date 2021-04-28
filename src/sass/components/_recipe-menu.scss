@@ -38,20 +38,20 @@
 
 .recipe-menu {
     @media screen and (max-width:767px) {
-        top: 30%;
-        padding: 30px 45px 25px;
+        top: 29%;
+        padding: 25px 45px 20px;
         width: 223px;
-        height: 327px;
+        height: 332px;
     }
     @media screen and (min-width:768px) and (max-width:1279px) {        
-        top: 28%;
-        padding: 30px 55px 25px;
+        top: 27%;
+        padding: 30px 46px 30px;
         width: 220px;
-        height: 350px;
+        height: 355px;
     }
     @media screen and (min-width:1280px) {
         top: 26%;
-        padding: 60px 55px 25px;       
+        padding: 51px 37px 34px;       
         width: 235px;
         height: 390px;
     }
@@ -152,6 +152,31 @@
 }
 
 .contacts-section__btn-close--products {
-    width: 50px;
-    height: 20px;
+    color: var(--recipe-text-color);
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    min-height: 34px;
+    min-width: 85px;
+    background-color: rgb(255, 235, 246);;
+    cursor: pointer;
+    transition: color var(--main-animation), background-color var(--main-animation);
+        
+        &:hover,
+        &:focus {
+            color: var(--menu-font-color);
+            background-color: var(--recipe-text-color);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+        @media screen and (max-width:767px) {
+           margin-top: 20px;
+        }
+        @media screen and (min-width:768px) and (max-width:1279px) {        
+          margin-top: 28px;
+        }
+        @media screen and (min-width:1280px) {
+            margin-top: 40px;
+            width: 100px;
+        }
 }
+    
