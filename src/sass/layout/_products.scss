@@ -1,12 +1,20 @@
 .products{
-    background: var(--bg-of-section);
-    // background: #fff;
+    background-color: #fff;
+    transform: scale(1);
+   
 
     &__item {
         display: flex;
         align-items: center;
         flex-direction: column;
         border-radius: 24px;
+        transform: scale(1);
+        transition: transform var(--main-animation);
+
+        &:focus,
+        &:hover {
+            transform: scale(1.05);
+        }
 
         &--red {
             background: var(--main-bg-color);

@@ -8,7 +8,14 @@
   text-transform: uppercase;
   margin-bottom: 15px;
   color: var(--sup-font-color);
+  transform: scale(1);
+  transition: transform var(--main-animation);
 
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+  
   &--footer {
     margin-bottom: 17px;
     text-align: start;

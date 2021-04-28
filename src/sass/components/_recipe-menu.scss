@@ -1,3 +1,4 @@
+
 .arrow-btn {
     display: flex;
     align-items: center;
@@ -7,7 +8,13 @@
     border-radius: 50%;
     border-color: transparent;
     cursor: pointer;
-    transition: border-color var(--main-animation);
+    transform: scale(1);
+    transition: border-color var(--main-animation), transform var(--main-animation);
+
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+    }
     
     &--red:hover,
     &--red:focus{
@@ -28,36 +35,52 @@
     width: 40px;
     height: 40px;
 }
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+
 .recipe-menu {
     @media screen and (max-width:767px) {
-        width: 280px;
-        height: 410px;
+        top: 29%;
+        padding: 25px 45px 20px;
+        width: 223px;
+        height: 332px;
     }
-    @media screen and (min-width:768px) and (max-width:1279px) {
+    @media screen and (min-width:768px) and (max-width:1279px) {        
+        top: 27%;
+        padding: 30px 46px 30px;
         width: 220px;
-        height: 425px;
+        height: 355px;
     }
     @media screen and (min-width:1280px) {
-        width: 329px;
-        height: 460px;
+        top: 26%;
+        padding: 51px 37px 34px;       
+        width: 235px;
+        height: 390px;
     }
 }
 
 .recipe-menu {
+    pointer-events: none;
+    opacity: 0;
+    z-index: 50;
+    visibility: hidden;
+
     position: absolute;
-    padding: 80px 60px 40px;
-    top: 10%;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 20px;
+    border-radius: 24px;
     background-image:url(../images/products/milk-drop.jpg);
    
     transition: opacity var(--main-animation);
+
+   
+    &.is-open {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        pointer-events: visible;
+        // transform: scale(1.1);
+        
+        transition:  opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
     
     &__close-btn {
         position: absolute;
@@ -68,12 +91,17 @@
         right: 18px;
         width: 18px;
         height: 18px;
-        border-radius: 50%;
         cursor: pointer;
-        border-color: var(--recipe-text-color);        
+        border-color: transparent; 
+        background-color: transparent;       
         color: var(--recipe-text-color);
-
-        transition: color var(--main-animation);
+        transform: scale(1);
+        transition: color var(--main-animation), transform var(--main-animation);
+    
+            &:hover,
+            &:focus {
+                transform: scale(1.2);
+            }
     }
     &__close-icon {
         padding: 0;
@@ -117,7 +145,38 @@
 .recipe-menu{
     &__close-btn:focus,
     &__close-btn:hover{
-        border-color: var(--btn-hover-color);
-        color: var(--btn-hover-color);
+        background-color: var(--recipe-text-color);
+        border-radius: 50%;
+        color: #fff;
     }
 }
+
+.contacts-section__btn-close--products {
+    color: var(--recipe-text-color);
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    min-height: 34px;
+    min-width: 85px;
+    background-color: rgb(255, 235, 246);;
+    cursor: pointer;
+    transition: color var(--main-animation), background-color var(--main-animation);
+        
+        &:hover,
+        &:focus {
+            color: var(--menu-font-color);
+            background-color: var(--recipe-text-color);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+        @media screen and (max-width:767px) {
+           margin-top: 20px;
+        }
+        @media screen and (min-width:768px) and (max-width:1279px) {        
+          margin-top: 28px;
+        }
+        @media screen and (min-width:1280px) {
+            margin-top: 40px;
+            width: 100px;
+        }
+}
+    
