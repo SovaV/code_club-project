@@ -20,6 +20,17 @@
   flex-direction: column;
   justify-content: space-between;
 
+  &:hover::before,
+  &:focus::before {
+    transform: scale(1.5);
+  }
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+
   &::before {
     content: '';
     height: 50px;
@@ -27,7 +38,8 @@
     background-image: url('../images/advantages/adv2@1x.png');
     background-size: contain;
     background-repeat: no-repeat;
-    // margin-bottom: 16px;
+
+    transition: transform var(--main-animation);
 
     @media screen and (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
