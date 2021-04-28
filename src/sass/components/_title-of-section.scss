@@ -7,6 +7,15 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--secondary-color);
+  
+
+    &:focus,
+    &:hover {
+      animation-name: heartBeat;
+      animation-duration: 2000ms;
+      animation-timing-function: linear;
+  }
+   
 
   &--products {
     margin-bottom: 144px;
