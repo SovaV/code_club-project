@@ -1,0 +1,40 @@
+body {
+  font-family: var(--main-font), sans-serif; /* основной шрифт */
+}
+
+a {
+  text-decoration: none; /* убираем подчеркивание ссылок */
+}
+
+ul {
+  list-style-type: none; /* убираем маркеры */
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%; /* запрещаем расширяться больше своего размера */
+  height: auto;
+  object-fit: contain; /* заполняет собой контейнер с сохранением пропорций */
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
