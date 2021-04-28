@@ -210,7 +210,6 @@
   height: 100vh;
   flex-direction: column;
   pointer-events: none;
-  overflow: scroll;
   padding-top: 60px;
   background-color: #e17992;
   transform: translateX(100%);
@@ -747,7 +746,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
+
   transform: scale(1);
   overflow-y: auto;
   background-color: rgba(212, 20, 67, 0.2);
