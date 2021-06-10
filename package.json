@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://https://sovav.github.io/code_club-project/",
+  "homepage": "https://sovav.github.io/code_club-project/",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /code_club-project/"
