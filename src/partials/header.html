@@ -192,53 +192,59 @@
         <use href="./images/header/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <div class="header__modal-menu">
-      <h3 class="header__model-title">choose a taste</h3>
-      <ul class="header__model-choice">
-        <li class="header__modal-item">
-          <a href="" class="header__modal-link">
-            <div>
-              <img class="header__modal-img" src="./images/header/mob/choc.png" alt="" />
-            </div>
-            <div class="header__modal-name">
-              <b class="header__modal-name--text">chocolate</b>
-            </div>
-          </a>
-        </li>
+    <form class="header__modal-menu">
+      <div class="contact-model">
+        <p class="contact-model__title">Оставьте свои данные, мы вам перезвоним</p>
+        <label class="form-filed" for="user-name">Имя</label>
+        <div class="form-rel">
+          <input
+            class="form-rel__input"
+            type="text"
+            name="user-name"
+            id="user-name"
+            required
+            minlength="2"
+          />
+        </div>
 
-        <li class="header__modal-item">
-          <a href="" class="header__modal-link">
-            <div>
-              <img class="header__modal-img" src="./images/header/mob/caram.png" alt="" />
-            </div>
-            <div class="header__modal-name">
-              <b class="header__modal-name--text">caramel</b>
-            </div>
-          </a>
-        </li>
+        <label class="form-filed" for="user-te">Телефон</label>
+        <div class="form-rel">
+          <input
+            class="form-rel__input"
+            type="tel"
+            name="user-tel"
+            id="user-te"
+            required
+            pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+            title="012 123 12 12"
+          />
+        </div>
 
-        <li class="header__modal-item">
-          <a href="" class="header__modal-link">
-            <div>
-              <img class="header__modal-img" src="./images/header/mob/plombir.png" alt="" />
-            </div>
-            <div class="header__modal-name">
-              <b class="header__modal-name--text">vanilla</b>
-            </div>
-          </a>
-        </li>
-        <li class="header__modal-item">
-          <a href="" class="header__modal-link">
-            <div>
-              <img class="header__modal-img" src="./images/header/mob/berry.png" alt="" />
-            </div>
-            <div class="header__modal-name">
-              <b class="header__modal-name--text">berry</b>
-            </div>
-          </a>
-        </li>
-      </ul>
+        <label class="form-filed" for="user-email">Почта</label>
+        <div class="form-rel">
+          <input class="form-rel__input" type="email" name="user-email" id="user-email" required />
+        </div>
+
+        <label class="form-filed" for="message">Комментарий</label>
+        <textarea
+          class="form-filed__comment"
+          name="comment"
+          id="message"
+          placeholder="Введите текст"
+        ></textarea>
+      </div>
+
+      <label class="agreement-filed">
+        <input
+          class="checkbox agreement-filed--checkbox"
+          type="checkbox"
+          name="contract"
+          value="conditions"
+        />
+        <span class="agreement-filed__check-icon"></span>
+        Подписаться на рассылкой
+      </label>
       <button class="header__modal-btn" type="submit">buy</button>
-    </div>
+    </form>
   </div>
 </div>
